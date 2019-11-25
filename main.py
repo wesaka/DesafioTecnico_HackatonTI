@@ -61,6 +61,8 @@ def organizar_mapa_comprimentos(list_string):
 
 # Retorna uma lista com várias listas contendo todas as combinacoes possiveis de comprimentos de sub-anagramas que
 # resultem no comprimento da expressao inicial
+# Autor dessa função: https://stackoverflow.com/users/1903116/thefourtheye
+# Minha solução incial era extremamente ineficience - Esta é mais rapida e compreensiva que achei
 def todas_combinacoes_possiveis(lst, target, with_replacement=False):
     def _todas_combinacoes_possiveis(idx, l, r, t, w):
         if t == sum(l):
